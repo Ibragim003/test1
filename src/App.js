@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import logo from './MegaMart.png'
+import menu from './Rectangle 3.png'
+import poisk from './Search.png'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={menu}/>
+        <img src={logo}/>
+        <div className="poisk">
+          <img src={poisk}/>
+
+          <input className='search' placeholder='Search essentials, groceries and more...'></input>
+          <p></p>
+
+        </div>
+        
       </header>
+      
+     
     </div>
   );
 }
